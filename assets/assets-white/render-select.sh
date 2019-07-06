@@ -18,7 +18,8 @@ INDEX="select.txt"
         echo Rendering $ASSETS_DIR/$i.png
         $INKSCAPE --export-id=$i \
                   --export-id-only \
-                  --export-png=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
+                  --export-png=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null \
+                  --export-height=72
     fi
     done
 exit 0
